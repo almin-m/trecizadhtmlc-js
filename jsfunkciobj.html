@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Assignment - JS funkcije i objekti</title>
+
+    <style>
+        body {
+            text-align: center
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="title">
+        <h1>Assignment - JS funkcije i objekti</h1>
+    </div>
+
+
+    <div class="mid">
+
+        <p>Formula za izračunavanje površine kvadra je P = 2 * (ab * ac * bc), odnosno, površina kvadra je jednaka zbiru površina
+            pravougaonika koji ga čine.</p>
+
+
+
+        <p>Molimo unesite stranice kvadra: </p>
+
+        <form name="form1" onsubmit="return false">
+            a
+            <input type="number" name="num1" min="0" required> b
+            <input type="number" name="num2" min="0" required> c
+            <input type="number" name="num3" min="0" required>
+            <input type="submit" value="submit" onclick="hnja()">
+            <p>Rezultat:
+                <input type="text" name="rezultat" value=" ">
+            </p>
+        </form>
+
+    </div>
+
+
+    <script>
+        function hnja() {
+            var a = form1.num1.value;
+            var b = form1.num2.value;
+            var c = form1.num3.value;
+
+            var res = 2 * ((a * b) * (a * c) * (b * c));
+            document.form1.rezultat.value = res;
+
+
+        }
+    </script>
+
+</body>
+
+</html>
